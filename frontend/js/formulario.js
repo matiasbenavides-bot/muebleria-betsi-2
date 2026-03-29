@@ -7,9 +7,9 @@ document.querySelector(".cotizar-form").addEventListener("submit", function(e) {
 
   const telefono = "56988996929"; // tu número en formato internacional (Chile)
 
-  const mensaje = `Hola, quiero solicitar una cotización:%0A
-Nombre: ${nombre}%0A
-Tipo de mueble: ${tipo}%0A
+  const mensaje = `Hola, quiero solicitar una cotización:
+Nombre: ${nombre}
+Tipo de mueble: ${tipo}
 Descripción: ${descripcion}`;
 
   const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
