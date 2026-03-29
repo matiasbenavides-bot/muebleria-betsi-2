@@ -1,0 +1,88 @@
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('../../img/hero.jpeg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* OVERLAY */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* CONTENIDO */
+.hero-content {
+  position: relative;
+  color: var(--text-inverse);
+  max-width: 600px;
+  border: 2px solid rgb(42, 23, 0);
+  border-radius: 15px;
+  padding:20px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* HEADER DEL HERO */
+.hero-header {
+  margin-bottom: 25px;
+}
+
+.hero-header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.hero-header p {
+  font-size: 1rem;
+  color: var(--color-gold-light);
+}
+
+/* BOTONES */
+.hero-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* BOTÓN BASE */
+.btn {
+  padding: 10px 20px;
+  background: var(--color-gold);
+  color: var(--text-inverse);
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  transition: var(--transition);
+  border: none;
+}
+
+/* HOVER */
+.btn:hover {
+  background: var(--color-gold-dark);
+}
+
+/* BOTÓN SECUNDARIO */
+.btn-secondary {
+  background: black;
+  border: 1px solid var(--text-inverse);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: var(--text-inverse);
+  color: var(--text-main);
+}
+
+@media (min-width: 768px) {
+  .hero-header h1 {
+    font-size: 3rem;
+  }
+
+  .hero-header p {
+    font-size: 1.2rem;
+  }
+}

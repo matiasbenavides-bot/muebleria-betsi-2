@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mueblería Betsi | Muebles a medida en Santiago</title>
+
+  <meta name="description" content="Fabricación y restauración de muebles a medida en Santiago. Más de 32 años de experiencia trabajando con maderas nobles.">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="header">
+  <div class="overlay"></div>
+  <div class="container">
+
+    <div class="logo">
+      <h1>Mueblería Betsi</h1>
+    </div>
+
+    <button 
+      class="menu-toggle" 
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="nav-menu">
+      ☰
+    </button>
+
+    <nav id="nav-menu" class="nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#cotizar">Cotizar</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<section id="hero" class="hero">
+  <div class="hero-content container">
+
+    <header class="hero-header">
+      <h1>Muebles a medida para tu hogar</h1>
+      <p>Fabricamos y restauramos muebles con más de 30 años de experiencia.</p>
+    </header>
+
+    <div class="hero-actions">
+      <a href="#productos" class="btn">Ver productos</a>
+      <a href="#cotizar" class="btn btn-secondary">Cotizar</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="servicios" class="servicios">
+  <header class="section-header container">
+    <h2>Nuestros Servicios</h2>
+    <p>Ofrecemos soluciones completas en muebles, desde restauración hasta diseño a medida.</p>
+  </header>
+
+  <div class="servicios-container container">
+
+    <article class="servicio">
+      <h3>Restauración de muebles</h3>
+      <p>Recuperamos muebles antiguos utilizando técnicas artesanales, devolviendo su estética y funcionalidad.</p>
+    </article>
+
+    <article class="servicio">
+      <h3>Fabricación a medida</h3>
+      <p>Construimos muebles adaptados a tus espacios y necesidades.</p>
+    </article>
+
+    <article class="servicio">
+      <h3>Diseño personalizado</h3>
+      <p>Creamos piezas únicas que reflejan tu estilo y preferencias.</p>
+    </article>
+
+  </div>
+</section>
+
+<section id="productos" class="productos">
+  <header class="section-header container">
+    <h2>Productos destacados</h2>
+    <p>Algunos de nuestros trabajos recientes.</p>
+  </header>
+
+  <div class="productos-container container">
+
+    <article class="producto">
+      <img src="img/producto1.jpeg" alt="Silla personalizada">
+      <div class="producto-info">
+        <h3>Silla tapizada</h3>
+        <p class="precio">A pedido</p>
+      </div>
+    </article>
+
+    <article class="producto">
+      <img src="img/producto2.jpeg" alt="Silla tapizada personalizada">
+      <div class="producto-info">
+        <h3>Silla tapizada</h3>
+        <p class="precio">A pedido</p>
+      </div>
+    </article>
+
+    <article class="producto">
+      <img src="img/producto3.jpeg" alt="Sillon hecho a medida">
+      <div class="producto-info">
+        <h3>Sillon a medida</h3>
+        <p class="precio">A pedido</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="cotizar" class="cotizar">
+  <header class="section-header container">
+    <h2>Cotiza tu mueble a medida</h2>
+    <p>Cuéntanos lo que necesitas y te ayudamos a diseñarlo.</p>
+  </header>
+
+  <div class="cotizar-container container">
+
+    <form class="cotizar-form">
+
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label for="tipo">Tipo de mueble</label>
+        <input id="tipo" name="tipo" type="text" placeholder="Ej: mesa, closet, escritorio">
+      </div>
+
+      <div class="form-group">
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" name="descripcion" rows="4" placeholder="Describe lo que necesitas"></textarea>
+      </div>
+
+      <button type="submit" class="btn">Solicitar cotización</button>
+
+    </form>
+
+    <div class="cotizar-extra">
+      <p>También puedes contactarnos directamente:</p>
+      <a href="https://wa.me/56988996929" target="_blank" class="btn btn-secondary">
+        WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="nosotros" class="nosotros">
+  <header class="section-header container">
+    <h2>Sobre Nosotros</h2>
+    <p>Más de 32 años de experiencia en fabricación y restauración de muebles.</p>
+  </header>
+
+  <div class="nosotros-container container">
+
+    <div  style="text-align: center;" class="nosotros-texto">
+      <p>
+        En <strong>Mueblería Betsi</strong> nos especializamos en la fabricación, restauración 
+        y diseño de <strong>muebles a medida</strong>.
+      </p>
+
+      <p>
+        Trabajamos con <strong>maderas nobles del sur de Chile</strong> como castaño, encina, mañío, coigüe y pino.
+      </p>
+
+      <p>
+        Cada proyecto es único, adaptado a las necesidades y estilo de nuestros clientes.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="ubicacion" class="ubicacion">
+  <header class="section-header container">
+    <h2>Ubicación</h2>
+    <p>Visítanos en nuestro taller en La Florida, Santiago.</p>
+  </header>
+
+  <div class="ubicacion-container container">
+
+    <div class="ubicacion-info">
+      <p><strong>Dirección:</strong></p>
+      <address>
+        Nacimiento 1564, La Florida, Santiago
+      </address>
+
+      <a href="https://www.google.com/maps?q=Nacimiento+1564,+La+Florida,+Santiago,+Chile" target="_blank" class="btn">
+        Ver en Google Maps
+      </a>
+    </div>
+
+    <div class="mapa">
+      <iframe 
+        src="https://www.google.com/maps?q=Nacimiento+1564,+La+Florida,+Santiago,+Chile&hl=es&z=17&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<section id="contacto" class="contacto">
+  <header class="section-header container">
+    <h2>Contacto</h2>
+    <p>Contáctanos y te responderemos a la brevedad.</p>
+  </header>
+
+  <div class="contacto-container container">
+
+    <div class="contacto-info">
+      <p><strong>Teléfono:</strong> +56 9 8899 6929</p>
+      <p><strong>Email:</strong> contacto@muebleriabetsi.cl</p>
+
+      <a href="https://wa.me/56988996929" target="_blank" class="btn">
+        WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+
+  <div class="footer-container container">
+
+    <div class="footer-brand">
+      <h3>Mueblería Betsi</h3>
+      <p>Muebles a medida y restauración con más de 32 años de experiencia.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Enlaces</h4>
+      <ul>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#cotizar">Cotizar</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contacto">
+      <h4>Contacto</h4>
+      <p>+56 9 8899 6929</p>
+      <p>contacto@muebleriabetsi.cl</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Mueblería Betsi. Todos los derechos reservados.</p>
+  </div>
+
+</footer>
+
+<script src="js/menu.js"></script>
+<script src="js/formulario.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+/* SECCIÓN */
+.contacto {
+  padding: 80px 0;
+  background: var(--bg-dark);
+}
+
+/* CONTENEDOR */
+.contacto-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* INFO */
+.contacto-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+}
+
+/* TEXTOS */
+.contacto-info p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* LINKS */
+.contacto-info a {
+  color: black;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.contacto-info a:hover {
+  color: var(--color-gold-dark);
+}

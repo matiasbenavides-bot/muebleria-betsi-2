@@ -1,0 +1,30 @@
+.nosotros {
+  padding: 80px 0;
+  background: var(--bg-dark);
+
+}
+
+/* CONTENEDOR */
+.nosotros-container {
+  gap: 30px;
+  justify-items: center; /* 👈 CLAVE */
+  text-align: center;
+}
+
+/* TEXTO */
+.nosotros-texto {
+  max-width: 700px; /* 👈 evita que se estire demasiado */
+}
+
+.nosotros-texto p {
+  margin-bottom: 15px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .nosotros-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,40 @@
+:root {
+
+  /* 🎨 Colores principales */
+  --color-white: #ffffff;
+  --color-black: #1a1a1a;
+
+  /* 🪵 Cafés (madera) */
+  --color-brown: #6b4f3b;
+  --color-brown-light: #8a6a52;
+  --color-brown-dark: #4a3628;
+
+  /* ✨ Dorados */
+  --color-gold: #c9a227;
+  --color-gold-light: #d6b24a;
+  --color-gold-dark: #8a6a1f;
+
+  /* 🎯 Backgrounds (dark system) */
+  --bg-main: var(--color-black);        /* fondo principal */
+  --bg-dark: #121212;                   /* fondo más profundo */
+  --bg-soft: #222222;                   /* cards / superficies */
+  --bg-accent: var(--color-brown);
+
+  /* 📝 Texto */
+  --text-main: var(--color-white);      /* texto principal */
+  --text-light: #d1d1d1;                /* texto secundario */
+  --text-muted: #a8a8a8;                /* texto débil */
+  --text-inverse: var(--color-black);
+
+  /* 🔘 Botones */
+  --btn-primary: var(--color-gold);
+  --btn-primary-hover: var(--color-gold-dark);
+
+  --btn-secondary: var(--color-brown);
+  --btn-secondary-hover: var(--color-brown-dark);
+
+  /* 📏 Extras */
+  --border: #333333;
+  --border-radius: 8px;
+  --transition: 0.3s ease;
+}
