@@ -1,0 +1,78 @@
+/* =========================
+   CATÁLOGO PRODUCTOS
+========================= */
+.catalogo-productos {
+  padding: 100px 0 80px; /* espacio extra por header fijo */
+  background: var(--bg-main);
+}
+
+/* GRID */
+.productos-container {
+  display: grid;
+  gap: 20px;
+}
+
+/* CARD */
+.producto {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER */
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(201, 164, 44, 0.15);
+  border-color: var(--color-gold);
+}
+
+/* IMAGEN */
+.producto img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+/* INFO */
+.producto-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* TÍTULO */
+.producto-info h3 {
+  font-size: 1.1rem;
+  color: var(--text-main);
+}
+
+/* CÓDIGO */
+.codigo {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* BOTÓN */
+.producto .btn {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* =========================
+   GRID RESPONSIVE
+========================= */
+@media (min-width: 600px) {
+  .productos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .productos-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
